@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/luisdandolini/express-pratica/issues"
   },
-  "homepage": "https://github.com/luisdandolini/express-pratica#readme"
+  "homepage": "https://github.com/luisdandolini/express-pratica#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
