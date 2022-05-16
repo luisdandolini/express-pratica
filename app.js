@@ -9,4 +9,8 @@ app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`)
 });
 
-app.use('/', rotasProdutos);
+app.get('/', (req, res) => {
+  res.send('Bem-Vindo!!')
+})
+
+app.use('/produtos', rotasProdutos);
