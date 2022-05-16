@@ -1,4 +1,5 @@
 const express = require('express');
+const rotasProdutos = require('./Routers/rotasProdutos');
 const app = express();
 
 const port = 3000;
@@ -7,6 +8,8 @@ const port = 3000;
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`)
 });
+
+app.use('/produtos', rotasProdutos);
 
 app.get('/', (req, res) => {
   res.send('Seção Inicial - Bem-vindo!')
